@@ -37,7 +37,7 @@
   <section id="home">
     <div class="home__container">
       <img src="imgs/avatar2.jpg" class="home__avatar" />
-      <h1 class="home__title">만 22살 개발자, 임준택 <br/>10년을 함께할 회사를 찾고 있습니다</h1>
+      <h1 class="home__title">문제를 해결하는것을 좋아합니다</h1>
       <h2 class="home__description">호서대학교 컴퓨터공학부 졸업예정(24년도 02월)
       </h2>
       <button class="home__contact">Contact Me</button>
@@ -123,6 +123,18 @@
     .portfolio__item a:hover {
       text-decoration: underline;
     }
+    table{
+      display: table;
+      width: max-content;
+      height: max-content;
+      border-collapse: collapse;
+      border-spacing: 0;
+      
+    }
+    table td{
+      display: table-cell;
+      padding-right: 70px;
+    }
   </style>
 
   <!-- About -->
@@ -132,31 +144,81 @@
         <p>
           Links:
           <a href="https://github.com/rage147-OwO" target="_blank">GitHub</a> |
-          <a href="https://blog.naver.com/dls32208" target="_blank">Blog</a> |
-          <a href="https://rage147-owo.github.io" target="_blank">GitHub Blog</a>
+          <a href="https://rage147-owo.github.io" target="_blank">GitHub Blog</a> |
         </p>
       </div>
     </div>
 
+    <div class="portfolio__container">
+      <div class="portfolio__item">
+      <p>이 기술을 잘 다룹니다:</p>
+      Pytorch, Sklearn,  OpenCV, Git, Unity, C#, Python<br/><br/>
+      <p>할 줄만 압니다:</p>
+      TensorFlow, ONNX, Django, Flutter, AWS, MySQL<br/><br/>
+      <p>관심이 있습니다:</p>
+      Digital Twin, Computer Vision
+      </div>
+    </div>
 
     <div class="portfolio__container">
 
       <div class="portfolio__item">
-        <p class="portfolio__date">2023.08 - 2023.09</p>
-        <p class="portfolio__title">치은염 감지를 위한 Mesh 생성 서비스(개인프로젝트)</p>
-        <p>설명: 원격진료와 더 나은 서비스를 위해 치은염 감지와 Mesh 생성 서비스를 개발하였습니다. 객체 감지 서비스를 Yolov4, Flutter, Django를 활용하여 구축했습니다.</p>
-        <p>기술 및 도구: Python, Pytorch, Django, Yolov4 (DarkNet, 객체 감지), OpenCV, Midas (깊이 추정), trimesh (깊이 맵을 3D 메쉬로 변환),
+        <p class="portfolio__title">치은염 감지를 위한 Mesh 생성 서비스(팀프로젝트)</p>
+        <p class="portfolio__date">2023.08 - 2023.09<br/>
+      </p>
+        <p>설명: 치아 이미지로 치은염을 감지한 뒤, 3D Mesh를 생성하는 서비스</p>
+        <p>기술 및 도구: Flutter, Pytorch, Django, Yolov4 (DarkNet, 객체 감지), OpenCV
           Flutter</p>
-        <a href="https://www.youtube.com/watch?v=aDtGdCJB10A" target="_blank">시연 영상 보기</a>
+        <a href="https://www.youtube.com/watch?v=WXp8tD126k8"> 시연 영상</a></br>
+        <a href="https://github.com/rage147-OwO/DataOnAirProject"> github Repo</a>
+        
+
+
+        <details>
+          <pre>
+            <p>
+          - 임준택: PM, 프론트, 백엔드, 라벨링<br/>
+          - 팀원1: AI, 라벨링<br/>
+          - 팀원2: AI, 라벨링<br/>
+          - 팀원3: AI, 라벨링<br/>
+          2023 데이터청년캠퍼스에서 카이아이컴퍼니와 진행한 실무형 프로젝트입니다.
+          앱에서 백엔드로 구강 이미지를 보내면, 백엔드에서 Object Detection과 Depth Estimation을 진행합니다. 
+          이후 URL을 생성하여 Flutter로 보내줍니다. Flutter에서는 URL을 받아서 3D Mesh를 렌더링합니다.
+
+          front- Flutter
+          back- Django
+          AI- Pytorch, OpenCV
+              Object Detection - Yolov4
+              Depth Estimation - Midas
+          3D- Trimesh
+              
+        </p>
+
+            </pre>
+          <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/96696114/269663465-6e067bb6-a35e-471b-8751-805513081d91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230921%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230921T150836Z&X-Amz-Expires=300&X-Amz-Signature=9d8593c39b73701daee893a727e15fec8c451e09c30f52909cc408e8400ea16e&X-Amz-SignedHeaders=host&actor_id=96696114&key_id=0&repo_id=693069776" width="40%"></img>
+          <img src="https://user-images.githubusercontent.com/96696114/267580935-4977f093-0ff0-4a4d-9b51-cf29950a5568.png" width="40%"></img></br>
+       </details>
       </div>
 
       <div class="portfolio__item">
         <p class="portfolio__date">2023.07</p>
         <p class="portfolio__title">SW중심대학 공동 AI 경진대회 2023(팀프로젝트)</p>
         <p>설명: 위성 이미지 건물 영역 분할(semantic segmentation), 44위(총 227팀)</p>
-        <p>기술 및 도구: Python, Pytorch, Unet(Model), HRNet(Sota Model)</p>
+        <p>기술 및 도구: Python, Pytorch</p>
         <a href="https://github.com/rage147-OwO/dacon-SatelliteImageBuildingAreaSegmentation" target="_blank">github Repo</a><br>
         <a href="https://dacon.io/competitions/official/236092/overview/description" target="_blank">대회 참여 페이지</a>
+        <details>
+        <pre>
+          <p>
+        - 임준택: PM, U-Net, HRNet<br/>
+        - 팀원1: EfficientnetPS, Internimage<br/>
+        SW중심대학 공동 AI 경진대회에서 호서대학교 팀으로 참여하여, 44위(총 227팀)를 차지하였습니다. 
+        위성의 사진을 semantic segmentation을 통해 건물 영역을 분할하는 대회였습니다.
+        당시 SOTA모델인 HRNet코드를 사용하였고, U-Net을 구현하였습니다.
+        </pre>
+      </p>
+        <img src="https://raw.githubusercontent.com/rage147-OwO/dacon-SatelliteImageBuildingAreaSegmentation/main/test_img/TEST_00000.png" width="20%"></img>
+        </details>
       </div>
 
       <div class="portfolio__item">
@@ -191,7 +253,7 @@
         <p class="portfolio__title">구글 클라우드 플랫폼을 이용한 Unity 내 RSS 뉴스 피더(개인프로젝트)</p>
         <p>설명: 구글 클라우드 플랫폼을 활용하여 Unity 내에서 RSS 뉴스 피더를 구현하였습니다.</p>
         <p>기술 및 도구: Python, Google Cloud Platform, Unity, RSS Feeder</p>
-        <a href="https://blog.naver.com/dls32208/223070716515" target="_blank">블로그 포스팅</a>
+        <a href="https://blog.naver.com/rage147-owo/223070716515" target="_blank">블로그 포스팅</a>
       </div>
 
       <div class="portfolio__item">
@@ -199,7 +261,7 @@
         <p class="portfolio__title">네이버 블로그 깃허브 블로그 연동(개인프로젝트)</p>
         <p>설명: 구글 클라우드 플랫폼을 활용하여 네이버 블로그와 깃허브 블로그를 연동하는(크롤링) 프로젝트를 진행하였습니다.</p>
         <p>기술 및 도구: Python, Google Cloud Platform, bs4</p>
-        <a href="https://blog.naver.com/dls32208/222987889966" target="_blank">블로그 포스팅</a>
+        <a href="https://blog.naver.com/rage147-owo/222987889966" target="_blank">블로그 포스팅</a>
       </div>
 
       <div class="portfolio__item">
@@ -215,7 +277,7 @@
         <p class="portfolio__title">Unity에서 천체 시뮬레이터 구현(개인프로젝트)</p>
         <p>설명: 밝은 별 카탈로그를 활용하여 사용자의 위치에 맞는 별자리 시뮬레이터를 Unity에서 구현하였습니다.</p>
         <p>기술 및 도구: Unity, C#</p>
-        <a href="https://blog.naver.com/dls32208/223088778966" target="_blank">블로그 포스팅</a>
+        <a href="https://blog.naver.com/rage147-owo/223088778966" target="_blank">블로그 포스팅</a>
       </div>
 
       <div class="portfolio__item">
@@ -223,8 +285,7 @@
         <p class="portfolio__title">VRChat상황극 콘테스트(팀프로젝트)</p>
         <p>설명: Unity를 이용하여 VRChat 메타버스 상황극 콘테스트에 참여하여 Unity 상호작용과 이펙트, 네트워킹을 담당했습니다</p>
         <p>기술 및 도구: Unity, VRC SDK</p>
-        <a href="https://www.youtube.com/watch?v=bWc72RKJfRQ" target="_blank">시연 영상 보기 in App</a>
-        <a href="https://youtu.be/WXp8tD126k8" target="_blank">시연 영상 보기 in Django</a>
+        <a href="https://www.youtube.com/watch?v=bWc72RKJfRQ" target="_blank">영상 보기</a>
       </div>
 
       <div class="portfolio__item">
